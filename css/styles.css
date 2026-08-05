@@ -523,6 +523,19 @@ h3 { font-size: clamp(1.5rem, 3vw, 2rem); }
   color: var(--yellow);
 }
 
+.btn-outline-yellow {
+  background: transparent;
+  border: 1px solid var(--yellow);
+  color: var(--white);
+  clip-path: none;
+}
+
+.btn-outline-yellow:hover {
+  border-color: var(--yellow-hot);
+  color: var(--yellow);
+  background: rgba(232, 185, 35, 0.08);
+}
+
 .btn-blue {
   background: var(--blue);
   color: var(--white);
