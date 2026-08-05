@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -23,7 +23,16 @@
       </button>
       <nav class="nav-links" id="site-nav" aria-label="Primary">
         <a href="index.html">Home</a>
-        <a href="services.html">Services</a>
+        <div class="nav-item has-dropdown">
+          <a href="services.html" class="nav-parent">Services <span class="nav-caret" aria-hidden="true"></span></a>
+          <div class="nav-dropdown" role="menu">
+            <a href="services.html" role="menuitem">All Services</a>
+            <a href="service-metals.html" role="menuitem">Metal Manufacturing</a>
+            <a href="service-plastics.html" role="menuitem">Plastics Manufacturing</a>
+            <a href="service-tooling.html" role="menuitem">Tool &amp; Die</a>
+            <a href="service-injection.html" role="menuitem">Injection Molding</a>
+          </div>
+        </div>
         <a href="about.html">About</a>
         <a href="qa.html" aria-current="page">Q&amp;A</a>
         <a href="contact.html" class="nav-cta">Contact</a>
@@ -74,7 +83,7 @@
           <details class="faq-item reveal">
             <summary>What metals equipment do you run?</summary>
             <div class="faq-body">
-              Highlights include Amada fiber and CO₂ lasers, turret punch and combo laser systems, press brakes up to 750 tons, OBI presses to 165 tons, CNC machining centers, roll forming lines, robotic welding, and powder coat. We also carry substantial steel inventory and overhead crane capacity for staging and shipping.
+              Highlights include Amada fiber and COâ‚‚ lasers, turret punch and combo laser systems, press brakes up to 750 tons, OBI presses to 165 tons, CNC machining centers, roll forming lines, robotic welding, and powder coat. We also carry substantial steel inventory and overhead crane capacity for staging and shipping.
             </div>
           </details>
 
@@ -142,7 +151,7 @@
         </div>
       </div>
       <div class="footer-bottom">
-        <span>© <span id="y"></span> Seljan Company LLC. All rights reserved.</span>
+        <span>Â© <span id="y"></span> Seljan Company LLC. All rights reserved.</span>
         <span>Office hours Mon–Fri 7:30–4:00 · Plant 24/6</span>
       </div>
     </div>

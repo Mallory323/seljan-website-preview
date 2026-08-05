@@ -23,7 +23,16 @@
       </button>
       <nav class="nav-links" id="site-nav" aria-label="Primary">
         <a href="index.html">Home</a>
-        <a href="services.html" aria-current="page">Services</a>
+        <div class="nav-item has-dropdown">
+          <a href="services.html" class="nav-parent" aria-current="page">Services <span class="nav-caret" aria-hidden="true"></span></a>
+          <div class="nav-dropdown" role="menu">
+            <a href="services.html" role="menuitem" aria-current="page">All Services</a>
+            <a href="service-metals.html" role="menuitem">Metal Manufacturing</a>
+            <a href="service-plastics.html" role="menuitem">Plastics Manufacturing</a>
+            <a href="service-tooling.html" role="menuitem">Tool &amp; Die</a>
+            <a href="service-injection.html" role="menuitem">Injection Molding</a>
+          </div>
+        </div>
         <a href="about.html">About</a>
         <a href="qa.html">Q&amp;A</a>
         <a href="contact.html" class="nav-cta">Contact</a>
@@ -67,6 +76,9 @@
             <li>Tool &amp; die, jigs &amp; fixtures</li>
             <li>Graphics printing</li>
           </ul>
+          <div class="cta-row">
+            <a class="btn btn-primary" href="service-metals.html">Learn more</a>
+          </div>
         </div>
       </article>
 
@@ -90,6 +102,9 @@
             <li>Urethane casting options</li>
             <li>In-house mold department</li>
           </ul>
+          <div class="cta-row">
+            <a class="btn btn-primary" href="service-plastics.html">Learn more</a>
+          </div>
         </div>
       </article>
 
@@ -109,6 +124,9 @@
             <li>Prototype tooling</li>
             <li>Production-ready molds</li>
           </ul>
+          <div class="cta-row">
+            <a class="btn btn-primary" href="service-tooling.html">Learn more</a>
+          </div>
         </div>
       </article>
 
@@ -128,6 +146,9 @@
             <li>High-volume capacity</li>
             <li>Design-for-moldability support</li>
           </ul>
+          <div class="cta-row">
+            <a class="btn btn-primary" href="service-injection.html">Learn more</a>
+          </div>
         </div>
       </article>
     </div>

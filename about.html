@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -23,7 +23,16 @@
       </button>
       <nav class="nav-links" id="site-nav" aria-label="Primary">
         <a href="index.html">Home</a>
-        <a href="services.html">Services</a>
+        <div class="nav-item has-dropdown">
+          <a href="services.html" class="nav-parent">Services <span class="nav-caret" aria-hidden="true"></span></a>
+          <div class="nav-dropdown" role="menu">
+            <a href="services.html" role="menuitem">All Services</a>
+            <a href="service-metals.html" role="menuitem">Metal Manufacturing</a>
+            <a href="service-plastics.html" role="menuitem">Plastics Manufacturing</a>
+            <a href="service-tooling.html" role="menuitem">Tool &amp; Die</a>
+            <a href="service-injection.html" role="menuitem">Injection Molding</a>
+          </div>
+        </div>
         <a href="about.html" aria-current="page">About</a>
         <a href="qa.html">Q&amp;A</a>
         <a href="contact.html" class="nav-cta">Contact</a>
@@ -49,7 +58,7 @@
             Seljan Company began dealing exclusively in metal manufacturing. Through the 1980s and 1990s we built thousands of molds for the largest rotomolders in the United States. That experience led us to invest in our own rotational molding machines — and a plastics division that now includes injection and blow molding.
           </p>
           <p style="color: var(--gray); margin-bottom: 1.25rem;">
-            Today we manufacture over 1,000 different plastic parts and 400+ metal part numbers from our campus at 100 S CP Avenue — the expansive former SPX/APV facility known locally as “Big Blue.”
+            Today we manufacture over 1,000 different plastic parts and 400+ metal part numbers from our campus at 100 S CP Avenue — the expansive former SPX/APV facility known locally as "Big Blue."
           </p>
           <div class="timeline">
             <div class="timeline-item">
@@ -157,7 +166,7 @@
         </div>
       </div>
       <div class="footer-bottom">
-        <span>© <span id="y"></span> Seljan Company LLC. All rights reserved.</span>
+        <span>Â© <span id="y"></span> Seljan Company LLC. All rights reserved.</span>
         <span>Office hours Mon–Fri 7:30–4:00 · Plant 24/6</span>
       </div>
     </div>

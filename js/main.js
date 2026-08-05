@@ -17,6 +17,11 @@
       toggle.setAttribute("aria-expanded", String(!open));
       links.classList.toggle("is-open", !open);
       document.body.style.overflow = open ? "" : "hidden";
+      if (open) {
+        links.querySelectorAll(".nav-item.is-open").forEach((item) => {
+          item.classList.remove("is-open");
+        });
+      }
     });
 
     links.querySelectorAll("a").forEach((a) => {
@@ -27,6 +32,32 @@
       });
     });
   }
+
+  document.querySelectorAll(".nav-item.has-dropdown").forEach((item) => {
+    const parent = item.querySelector(".nav-parent");
+    if (!parent) return;
+
+    parent.addEventListener("click", (e) => {
+      const isTouchOrMobile = window.matchMedia("(max-width: 960px)").matches;
+      if (!isTouchOrMobile) return;
+      // First tap opens submenu; second tap follows link if already open
+      if (!item.classList.contains("is-open")) {
+        e.preventDefault();
+        document.querySelectorAll(".nav-item.is-open").forEach((other) => {
+          if (other !== item) other.classList.remove("is-open");
+        });
+        item.classList.add("is-open");
+      }
+    });
+  });
+
+  document.addEventListener("click", (e) => {
+    if (!e.target.closest(".nav-item.has-dropdown")) {
+      document.querySelectorAll(".nav-item.is-open").forEach((item) => {
+        item.classList.remove("is-open");
+      });
+    }
+  });
 
   const reveals = document.querySelectorAll(".reveal");
   if ("IntersectionObserver" in window) {

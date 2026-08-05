@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -23,7 +23,16 @@
       </button>
       <nav class="nav-links" id="site-nav" aria-label="Primary">
         <a href="index.html">Home</a>
-        <a href="services.html">Services</a>
+        <div class="nav-item has-dropdown">
+          <a href="services.html" class="nav-parent">Services <span class="nav-caret" aria-hidden="true"></span></a>
+          <div class="nav-dropdown" role="menu">
+            <a href="services.html" role="menuitem">All Services</a>
+            <a href="service-metals.html" role="menuitem">Metal Manufacturing</a>
+            <a href="service-plastics.html" role="menuitem">Plastics Manufacturing</a>
+            <a href="service-tooling.html" role="menuitem">Tool &amp; Die</a>
+            <a href="service-injection.html" role="menuitem">Injection Molding</a>
+          </div>
+        </div>
         <a href="about.html">About</a>
         <a href="qa.html">Q&amp;A</a>
         <a href="contact.html" class="nav-cta" aria-current="page">Contact</a>
@@ -36,7 +45,7 @@
       <div class="wrap reveal">
         <p class="eyebrow">Sales &amp; support</p>
         <h1>Contact us</h1>
-        <p class="lede">Tell us about your part, volume, and timeline. We’ll route your inquiry to metals or plastics sales.</p>
+        <p class="lede">Tell us about your part, volume, and timeline. We'll route your inquiry to metals or plastics sales.</p>
       </div>
     </header>
 
@@ -77,7 +86,7 @@
             <h3>Visit</h3>
             <p>
               <a href="https://maps.google.com/?q=100+S+CP+Avenue,+Lake+Mills,+WI+53551" target="_blank" rel="noopener">
-                Get directions →
+                Get directions â†’
               </a>
             </p>
           </div>
@@ -112,7 +121,7 @@
             </div>
             <div class="form-field full">
               <label for="message">Project details</label>
-              <textarea id="message" name="message" placeholder="Part type, materials, volume, drawings available…" required></textarea>
+              <textarea id="message" name="message" placeholder="Part type, materials, volume, drawings available..." required></textarea>
             </div>
           </div>
           <div class="cta-row">
@@ -157,7 +166,7 @@
         </div>
       </div>
       <div class="footer-bottom">
-        <span>© <span id="y"></span> Seljan Company LLC. All rights reserved.</span>
+        <span>Â© <span id="y"></span> Seljan Company LLC. All rights reserved.</span>
         <span>Office hours Mon–Fri 7:30–4:00 · Plant 24/6</span>
       </div>
     </div>
