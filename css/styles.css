@@ -421,24 +421,23 @@ h3 { font-size: clamp(1.5rem, 3vw, 2rem); }
 
 .product-grid {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: repeat(2, 1fr);
   gap: 1.25rem;
 }
 
 .product-card {
-  display: grid;
-  grid-template-columns: minmax(10rem, 15rem) 1fr;
-  gap: 1.5rem 1.75rem;
-  align-items: center;
-  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  padding: 1.5rem 1.5rem 1.75rem;
   background: var(--bg-elevated);
   border: 1px solid var(--line);
-  border-left: 3px solid var(--blue);
+  border-top: 3px solid var(--blue);
   transition: border-color 0.25s, transform 0.25s var(--ease), background 0.25s;
 }
 
 .product-card:nth-child(even) {
-  border-left-color: var(--yellow);
+  border-top-color: var(--yellow);
 }
 
 .product-card:hover {
@@ -448,36 +447,36 @@ h3 { font-size: clamp(1.5rem, 3vw, 2rem); }
 }
 
 .product-card:nth-child(odd):hover {
-  border-left-color: var(--blue);
+  border-top-color: var(--blue);
 }
 
 .product-card:nth-child(even):hover {
-  border-left-color: var(--yellow);
+  border-top-color: var(--yellow);
 }
 
 .product-media {
   display: grid;
   place-items: center;
   min-height: 11rem;
-  padding: 0.75rem;
-  background:
-    radial-gradient(circle at 50% 55%, rgba(58, 143, 212, 0.12), transparent 65%),
-    #0a0a0a;
-  border: 1px solid var(--line);
+  margin: 0.15rem 0 0.35rem;
+  background: transparent;
+  border: none;
+  padding: 0;
 }
 
 .product-media img {
-  width: 100%;
-  max-height: 12.5rem;
+  width: auto;
+  max-width: 100%;
+  max-height: 11.5rem;
   object-fit: contain;
-  filter: drop-shadow(0 10px 18px rgba(0, 0, 0, 0.45));
+  filter: drop-shadow(0 14px 22px rgba(0, 0, 0, 0.55));
 }
 
 .product-copy {
   display: flex;
   flex-direction: column;
-  gap: 0.85rem;
-  min-width: 0;
+  gap: 0.75rem;
+  flex: 1;
 }
 
 .product-card .eyebrow {
@@ -490,25 +489,21 @@ h3 { font-size: clamp(1.5rem, 3vw, 2rem); }
 
 .product-card p {
   color: var(--gray);
+  flex: 1;
 }
 
 .product-card .btn {
   align-self: flex-start;
-  margin-top: 0.35rem;
+  margin-top: 0.25rem;
 }
 
 @media (max-width: 720px) {
-  .product-card {
+  .product-grid {
     grid-template-columns: 1fr;
-    gap: 1.1rem;
-  }
-
-  .product-media {
-    min-height: 10rem;
   }
 
   .product-media img {
-    max-height: 11rem;
+    max-height: 10.5rem;
   }
 }
 
