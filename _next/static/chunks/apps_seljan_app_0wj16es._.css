@@ -1661,9 +1661,27 @@ h3 {
   margin-top: 1rem;
 }
 
+.employment-hero {
+  padding-bottom: 1.5rem;
+}
+
 .employment-hero-grid {
+  grid-template-columns: minmax(0, 1fr) minmax(10rem, 14rem);
   align-items: start;
+  gap: clamp(1.25rem, 3vw, 2.25rem);
   margin-top: 1.25rem;
+}
+
+.employment-hero-grid img {
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  width: 14rem;
+  max-width: 100%;
+  max-height: 16rem;
+}
+
+.employment-apply-intro .eyebrow {
+  color: var(--blue);
 }
 
 .split {
