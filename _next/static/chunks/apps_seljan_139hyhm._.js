@@ -1662,7 +1662,6 @@ const employmentApplications = [
 const employment = {
     eyebrow: "Careers",
     title: "Work at Seljan",
-    whyEyebrow: "Why Seljan",
     why: [
         "Seljan has been locally family owned since 1967. We are not a branch of a larger corporation — ownership still sits in Lake Mills, and the people making the calls live with the work.",
         "Most of our management team is from this town. That independence lets us think in decades: we invest in the plant, run metals and plastics on one campus, and treat every part as something we will still be proud of years from now."

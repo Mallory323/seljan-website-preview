@@ -1661,6 +1661,11 @@ h3 {
   margin-top: 1rem;
 }
 
+.employment-hero-grid {
+  align-items: start;
+  margin-top: 1.25rem;
+}
+
 .split {
   border-top: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
