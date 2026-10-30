@@ -1662,7 +1662,6 @@ const employmentApplications = [
 const employment = {
     eyebrow: "Careers",
     title: "Work at Seljan",
-    lede: "Family-owned manufacturing in Lake Mills, Wisconsin. We hire people who want to make parts well — and stay with the work.",
     whyEyebrow: "Why Seljan",
     whyHeading: "A plant that still belongs here.",
     why: [
