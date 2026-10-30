@@ -621,6 +621,10 @@ const nav = [
         label: "About"
     },
     {
+        href: "/employment",
+        label: "Employment"
+    },
+    {
         href: "/qa",
         label: "Q&A"
     },
@@ -642,6 +646,10 @@ const footerNav = [
     {
         href: "/about",
         label: "About"
+    },
+    {
+        href: "/employment",
+        label: "Employment"
     },
     {
         href: "/qa",

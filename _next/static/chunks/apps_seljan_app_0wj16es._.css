@@ -646,6 +646,7 @@ h3 {
 .page-hero.products-hero {
   text-align: center;
   background: #252525;
+  padding-top: clamp(1.15rem, 2.5vw, 1.75rem);
   padding-bottom: 0;
 }
 
@@ -2086,6 +2087,10 @@ h3 {
   display: grid;
 }
 
+.contact-block h2 {
+  margin-bottom: .75rem;
+}
+
 .contact-block h3 {
   color: var(--yellow);
   margin-bottom: .5rem;
@@ -2096,8 +2101,172 @@ h3 {
   color: var(--gray);
 }
 
-.contact-block a:hover {
+.contact-block a:hover, .contact-block a.btn-outline-yellow {
   color: var(--white);
+}
+
+.contact-block a.btn-outline-yellow:hover {
+  color: var(--yellow);
+}
+
+.contact-block a.btn-ghost {
+  color: var(--white);
+}
+
+.contact-block a.btn-ghost:hover {
+  color: var(--yellow);
+}
+
+.employment-apply-intro {
+  gap: .75rem;
+  display: grid;
+}
+
+.employment-apply-intro > .contact-block h2 {
+  margin-bottom: 0;
+}
+
+.employment-doc-actions {
+  flex-wrap: wrap;
+  gap: .6rem;
+  margin-top: .85rem;
+  display: flex;
+}
+
+.employment-apply-open {
+  justify-content: center;
+  margin-top: 2.5rem;
+  display: flex;
+}
+
+.employment-apply-open .btn {
+  min-width: 14rem;
+}
+
+.employment-form {
+  scroll-margin-top: calc(var(--nav-h) + 1rem);
+  margin-top: 1.75rem;
+}
+
+.employment-form-toolbar {
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: .5rem;
+  display: flex;
+}
+
+.employment-lang {
+  flex-shrink: 0;
+  gap: .4rem;
+  display: flex;
+}
+
+.employment-lang .btn {
+  min-height: 2.5rem;
+  padding: .45rem .9rem;
+}
+
+.employment-lang .btn[aria-pressed="true"] {
+  border-color: var(--yellow);
+  color: var(--yellow);
+}
+
+.employment-submit-heading {
+  color: var(--yellow);
+  margin-bottom: .5rem;
+  font-size: 1.2rem;
+}
+
+.employment-submit-help {
+  color: var(--gray);
+  max-width: 42rem;
+  margin-bottom: 0;
+}
+
+.employment-legal, .employment-ssn-note {
+  color: var(--gray);
+  margin: .85rem 0 0;
+  font-size: .9rem;
+}
+
+.employment-ssn-note {
+  color: var(--yellow);
+}
+
+.form-section {
+  border-top: 1px solid var(--line);
+  margin-top: 1.75rem;
+  padding-top: 1.35rem;
+}
+
+.form-section h3 {
+  color: var(--yellow);
+  margin-bottom: 1rem;
+  font-size: 1.05rem;
+}
+
+.employment-subblock {
+  margin-bottom: 1.25rem;
+}
+
+.employment-subblock h4 {
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--gray);
+  margin: 0 0 .75rem;
+  font-size: .8rem;
+}
+
+.form-choice-group {
+  border: 0;
+  margin: .25rem 0 .5rem;
+  padding: 0;
+}
+
+.form-choice-group legend {
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  color: var(--gray);
+  margin-bottom: .55rem;
+  font-size: .7rem;
+}
+
+.form-choices {
+  flex-wrap: wrap;
+  gap: .7rem 1.2rem;
+  display: flex;
+}
+
+.form-choices label, .form-certify {
+  color: var(--white);
+  letter-spacing: 0;
+  text-transform: none;
+  cursor: pointer;
+  align-items: flex-start;
+  gap: .5rem;
+  font-size: .95rem;
+  display: flex;
+}
+
+.form-certify {
+  max-width: 48rem;
+  margin: 1rem 0 1.25rem;
+}
+
+.form-certify span {
+  color: var(--gray);
+}
+
+.form-choices input, .form-certify input {
+  width: auto;
+  accent-color: var(--yellow);
+  margin-top: .2rem;
+}
+
+.employment-form textarea {
+  min-height: 5.5rem;
 }
 
 .hours-table {
